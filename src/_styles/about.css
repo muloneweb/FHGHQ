@@ -1,0 +1,142 @@
+/* CSS files add styling rules to your content */
+@font-face {
+ font-family: Jost;
+  src: url('https://cdn.glitch.com/98ac14b2-4603-4541-b92e-320b855d2e65%2FLiberationSans-Regular.ttf?1542529350632');
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+  text-rendering: optimizeLegibility;
+}
+body {
+  /*font-family: "Benton Sans", "Helvetica Neue", "Sansation", helvetica, arial, sans-serif;*/
+  font-family: Jost;
+  margin: 1em;
+  background: url(https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2F1.jpg?v=1560212987369);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center center; 
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+}
+  body, #scrollspycontainer {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-9 div {
+    height: 500px;
+  }
+h1,h2,h3,h4,h5,h6,h7,p,li{
+ color: #d6d6d6;  
+}
+#top{
+text-align:right;
+}
+.modal-body,.modal-header,.modal-footer{
+  background-color: #373737;
+}
+.orangetext{
+ color: #D75A02; 
+}
+header{
+height:50px;
+}
+p{
+  margin: 0px;
+}
+table, th, td {
+    height:20px;
+    text-align:center;
+}
+.shortinput{
+width:100px;
+}
+.hqinput{
+width:130px;
+}
+.button,.btn{
+background-color:#EC7201;
+}
+.btn:hover{
+background-color:#FC893D
+}
+.btn{
+margin:5px;
+}
+.profileimage{
+  height : 35px;
+  width : 35px;
+}
+.removebutton
+{
+  background-color: #373737; 
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  height : 35px;
+  width : 35px;
+}
+.removeimage
+{
+  height : 35px;
+  width : 35px;
+}
+.indextable{
+margin:0px;
+}
+.leaflet-container{
+ background-color: #373737;
+}
+.toprow{
+height:30px;
+}
+.credits{
+text-align:left;
+}
+img{
+max-width:50vw;
+}
+.flex-column{
+margin-top:50px;
+}
+.nav-link{
+padding:4px;}
+#myScrollspy{
+padding:0px;
+}
+
+.nav-pills .nav-link.active{
+  background-color: #e4713d;
+  border-radius: 0px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav-link{
+  
+  font-size:10px;
+  }
+  .container-fluid{
+  padding:0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .col-3{
+  display:none;
+  }
+  .col-sm-10,.col-9{
+  width:100%;
+  width:100vw !important;
+  }
+  p{
+  width:100vw !important;
+  }
+}

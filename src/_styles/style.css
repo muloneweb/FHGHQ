@@ -1,0 +1,228 @@
+/* CSS files add styling rules to your content */
+
+@font-face{
+ font-family: Jost;
+  src: url('https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2FJost-400.ttf?1556105927235');
+}
+
+body {
+  /*font-family: "Benton Sans", "Helvetica Neue", "Sansation", helvetica, arial, sans-serif;*/
+  font-family: Jost;
+  margin: 1em;
+  background-color: #373737;
+   -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+  font-weight:normal;
+  -webkit-text-stroke: 0.001px transparent;
+}
+h2,h3,h4,h7,p{
+ color: #d6d6d6; 
+}
+h8{color: #d6d6d6;
+font-size: 15px;
+margin: 0px 0px 0px;}
+h2{
+margin:0px;
+vertical-align:middle;
+}
+h3{
+text-align:center;
+  font-size: 18px;
+}
+
+h5{
+ background-color: transparent;
+	margin-top: 5px;
+  font-size: 15px;
+color: #d6d6d6;
+}
+
+h6
+{color: #d6d6d6;}
+
+#top{
+text-align:right;
+  padding-top: 7px;
+}
+.btn.TopBtn{
+margin: 0px;}
+.usertable{
+margin-top: 20px;
+  }
+#metacontainer{
+margin: 0px;
+text-align: right;}
+
+#manage { 
+background-color:rgba(0,0,0,0.6);}
+
+.modal-body,.modal-header,.modal-footer{
+  background-color: #373737;
+}
+.orangetext{
+ color: #D75A02; 
+}
+header{
+height:50px;
+}
+p{
+  margin: 0px;
+}
+table, th, td {
+    height:20px;
+    text-align:center;
+}
+.shortinput{
+width:100px;
+}
+#itemlist
+{
+background-color: rgba(0,0,0,0.7);
+}
+.hqinput{
+width:130px;
+}
+.button{
+background-color:#EC7201;
+}
+.btn{color: #d6d6d6;
+	background-color: #292929;
+	border:1px solid black;
+	border-radius: 0px;}
+.btn:hover{
+background-color:#FC893D
+}
+.btn{
+margin: 5px;
+}
+  a{color:#e4713d;}
+  a:hover{color:#f05915;}
+
+.darkheader{
+  text-align: center;
+background-color: rgba(0,0,0,0.8);
+  width: 100%;
+}
+.profileimage{
+  height : 35px;
+  width : 35px;
+}
+.removebutton
+{
+  background-color: inherit; 
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  height : 30px;
+  width : 30px;
+}
+.removeimage
+{
+  height : 100%;
+  width : 100%;
+}
+.profileimg{
+  height : 35px;
+  width : 35px;
+}
+
+#roomtable{
+   -moz-box-shadow: 2px 2px 4px 0px #000000;
+	-webkit-box-shadow: 2px 2px 4px 0px #000000;
+	box-shadow: 2px 2px 4px 0px #000000;
+}
+.indextable{
+ 
+margin:0px;
+  border: black;
+ }
+
+
+.leaflet-container{
+ background-color: inherit;
+}
+
+
+#updates {
+  min-width: 100px;
+  margin-left: 20px;
+  width: 100%;
+text-align: left;
+  height: max-content;
+  -moz-box-shadow: 2px 2px 4px 0px #000000;
+    -webkit-box-shadow: 2px 2px 4px 0px #000000;
+    box-shadow: 2px 2px 4px 0px #000000;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.6);
+    max-width: 800px;
+    animation: fadeIn 4s;
+
+}
+#updates-header {
+  text-align: center;
+}
+
+#stm{
+      outline:0 !important;
+  background-color: transparent;
+  width: 120px;
+  height: 44px;
+  border: 0px;
+  background: url(https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fsits_landing.png?v=1559680682388)  center center no-repeat;
+opacity: 0.8;
+}
+#stm:hover{
+    
+outline:0 !important;
+  opacity: 1;
+}
+
+#stm::after{
+  outline:0 !important;
+}
+
+.credits{
+text-align:center;
+}
+
+@media only screen and (max-width: 750px) {
+.col-sm-12{
+padding:0px;
+}  
+  body{
+  margin:0px;
+  } 
+  div{
+  padding:0px !important;
+  }
+  .removebutton{
+  width:20px !important;
+  height:20px !important;
+  }
+  #top{
+  text-align:center;
+  margin-top:5px;
+  }
+  #topbp{
+  text-align:center !important;
+  width:100%
+  }
+  #logoutBtn,#profileBtn,#aboutBtn{
+  width:30%;
+  }
+  h2{
+  text-align:center;
+  }
+  th{
+  padding:0px !important;
+  }
+  .removecell{
+  width:20px !important;
+  }
+}

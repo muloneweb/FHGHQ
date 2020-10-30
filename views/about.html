@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Foxhole Global HQ - About</title>
+    
+    <meta name="description" content="*Foxhole is a registered trademark of Clapfoot Inc., used on this website with their permission">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Faa.png?1555496179680" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://aratcliffe.github.io/Leaflet.contextmenu/dist/leaflet.contextmenu.css"/>
+    <!-- <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />-->
+    <link rel="stylesheet" href="/_styles/style.css">
+    <link rel="stylesheet" href="/_styles/global.css">
+    <link rel="stylesheet" href="/_styles/about.css">
+    <!-- import the webpage's stylesheet -->
+    
+      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+</head>
+  <body>     
+    <div class="row">     
+    <div class="col-lg-6">
+      <h2 id="roomheader">
+        About
+      </h2>
+
+    </div>
+    <div class="col-lg-6" id="top">
+    </div>
+    </div>
+    
+    <div id="scrollspycontainer" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+ <div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-2 col-3" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#profile">1. Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#roominterface">2. Room interface</a>
+        </li>
+      <!--<li class="nav-item">
+          <a class="nav-link" href="#userlist">2.1 User list</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#maplabel">2.2 Map</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#regionpan">2.3 Region pan menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#filterpanel">2.4 Facility filters</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="#managementpanel">3. Management panel</a>
+        </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="#townpanel">3.1 Town panel</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="#fortpanel"> 3.2 Fort/Outpost panel</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="#logipanel">3.3 Logi request panel</a>
+     </li>
+              <li class="nav-item">
+          <a class="nav-link" href="#artypanel">3.4 Artillery</a>
+     </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="#squadstab">4. Squads management</a>
+     </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#refinerytab">5. Refinery tab</a>
+     </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#logicalc">6. Logi calculator</a>
+     </li>  
+          <li class="nav-item">
+          <a class="nav-link" href="#tech">7. Tech tree</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#statstab"> 8. Statistics</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#usermanagement">9. Settings tab</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#credits">Credits</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-10 col-9" >
+<h2>
+  Foxhole Global HQ
+    </h2>
+    <p>
+      Foxhole Global HQ is a multi-user tool that allows teams to coordinate logistical efforts in the game. <br>
+      Features include:
+       <ul style="list-style-type:disc;">
+      <li>Real time map updates</li>
+      <li>User management</li>
+      <li>Tracking of refinery/production facility levels</li>
+      <li>Tracking of stockpiles/storage depots</li>
+      <li>Custom outpost markers with stockpiles</li>
+      <li>Resource refining calculator + timer</li>
+      <li>Squad tab for organizing roles and vehicle crews</li>
+      <li>Item calculator</li>
+      <li>Logistics requests</li>
+      <li>Blueprint menu and timers</li>
+      <li>Tech tree</li>
+      <li>Notes for markers</li>
+      </ul> 
+    </p>
+    <hr>
+    <h2>Guide</h2><hr>
+    <h4 id="profile">
+      1. Profile
+  </h4>
+    
+    
+    <p>
+      After authorizing through Steam, an account for the website is created and submitted into the database. Profiles are used to manage access to the rooms since a lot of
+      sensitive information can be stored there.
+      On your profile page you can see the rooms you are part of(1)
+      Leaving a room you are an admin of will also delete the room. You can also create a new room(2). On the top right are navigation buttons(3).
+      The panel on the top of the page is present on every page.<br />
+      <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fpho1.jpg?v=1561038406241" >
+    </p>
+    <hr><h4 id="roominterface">
+      2. Room interface
+    </h4>
+    <p>
+      The room interface consists of 4 main parts:</p>
+            <ul style="list-style-type:disc;">
+              <li>The User list (1)</li>
+              <li>The map (2)</li>
+              <li>The management panel (3)</li>
+              <li>The tabs (4)</li>
+          </ul>
+      <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fmpk.jpg?v=1561038580602">
+  <h5 id="userlist">
+    2.1 User list
+  </h5>
+    <p>
+       The user list displays users that are part of this room. Black background means the user is offline, green blackground means the user is online. The frame around the user name indicates the role of the user:  </p> 
+         <ul style="list-style-type:disc;">
+              <li>Orange - admin</li>
+              <li>Gold - moderator</li>
+              <li>White - user</li>
+          </ul>
+  <p>
+    Admins can manage all users, delete the room and transfer ownership. Moderators can manage all users except the admin and other moderators. Users have access to the room and change data in it.
+  </p>
+  <h5 id="maplabel">
+    2.2 Map
+  </h5>
+  <p>
+    The map consists of icons that represent various objects around the map. Every 3 seconds the server makes a request to the WarAPI, and, if there is new data, updates the map and sends the new data to all users. The icons on the map are divided by layers - you can turn on and off any layers if you want.
+  </p>
+  <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Flab.jpg?v=1561038283527">
+  <p>
+    Hovering your mouse over an icon will display the tooltip. For most of the objects the tooltip displays notes and the time of last update. For refineries and factories the tooltip additionally displays the facility levels. This data cannot be automatically obtained from the game and is updated by users, thus the time of last update.
+  </p>
+  <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fr1.jpg?v=1561038282172">  
+  <p>
+    Right clicking on the map will bring up a context menu that allows you to put various icons on the map.
+  </p>
+      <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fmcm.jpg?v=1561038283127">
+  <h5 id="regionpan">
+    2.3 Region pan menu
+    </h5>
+    <p>
+      The region pan menu allows you to instantly pan to any region by clicking one of the buttons.
+    </p>
+      <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fpanmap.jpg?v=1561116822959">
+    <h5  id="filterpanel">
+      2.4 Facility filters
+    </h5>
+    <p>
+    Selecting a facility filter will hide all town icons except those that contain all of selected facilities. This means selecting both basic material and refined material filters will leave only towns on the map where both facilities are present. This filter also hides all fort and observation tower icons while active.
+  </p>
+  <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Frefff.jpg?v=1561117117700">
+  <hr /><h4 id="managementpanel">
+    3. Management panel
+  </h4>
+  <h5 id="townpanel">
+    3.1 Town panel
+  </h5>
+  <p>
+    After clicking on a town, the town panel will appear and a selection marker will be shown at town's location. <b>The gray circle around the town hall or fort indicates the defense power radius.</b> <br /> The town panel consists of:
+             <ul style="list-style-type:disc;">
+              <li>Refinery panel</li>
+              <li>Production panel</li>
+              <li>Stockpile panel</li>
+              <li>Storage panel</li>
+               <li>Notes panel</li>
+               <li>Date of last update</li>
+          </ul>
+  </p>
+  <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Frefineryth.jpg?v=1561038781026">
+<p>
+  Refinery and production panels contain information about the levels of facilities in the selected town. You can enter a number to edit the data or press the "Fill" button. Pressing the "Fill" button will mark the facility as complete and increase upgrade part requirement for further upgrades. <br> The stockpile and storage panels can contain information about items in stockpiles/storage depots. You can click on any item and enter a number to edit the data. The changes will be immediately sent to the server. The filter buttons allow users to filter buttons by categories. Pressing the "Empty" button will reduce the amount of all items to zero. 
+</p>
+<img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fstock.jpg?v=1561117215733">
+<p>
+  The "Notes" section is present on all panels and can contain miscellaneous information about the selected item. Pressing "Save notes" will send the changes to the server. The "Last update" section contains information which says when was the last time this object has been updated.
+</p>
+<img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fnotes.jpg?v=1561117838030">
+
+<h5 id="fortpanel">
+  3.2 Fort/Outpost panel
+   </h5>
+   <p>
+     Fort panel is similar to the town panel, except it doesn't have the refinery/production facility panels. Outposts (FOBs) have an X button that allows you to delete them. You can change fort's faction and level in the menu.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Ffob.jpg?v=1561117967636">
+ 
+  <h5 id="logipanel">
+     3.3 Logi request panel
+   </h5>
+   <p>
+    Logi requests can be placed anywhere on the map via a context menu. On the modal you can select the items for the request and set their priorities. You can select the amount of requested items via an input. Selecting 0 amount will mean the request is indefinite and will show up as "some".
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Flogi9.jpg?v=1561039250463">
+   <p>
+     The panel itself says who is the creator of the request and has "Manufacturers" button(1) and "Edit request" button(2). Only the creator of the request can edit the request. Clicking on the "Manufacturers" button will show who is currently working on items for the request.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Flogi.jpg?v=1561117633588">
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Flogi2.jpg?v=1561117635265">
+  <p>
+    Clicking on the logi request items will transfer them to your production table. Everyone can see what items you are currently producing and coordinate their efforts. Clicking on items in production table will transfer them to the submit table. Alternatively, pressing "Open submit menu" button will transfer all items from production to submit table. Adding any items to the submit menu automatically collapses the logi request panel to give more space.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fsubm.jpg?v=1561117762965">
+   <p>
+     Pressing "Submit items" will move the items from the submit table to the request table and mark it with green color. If the amount of a supplied item satisfies the request with the top priority, it will be crossed out. If it does not, the request will display the amount of item required and total amount requested on hover.
+   </p>
+   <h5 id="artypanel">
+     3.4 Artillery
+   </h5>
+   <p>
+     On the bottom right corner of the map is the artillery panel. Click on it to enable the artillery calculator. The artillery calculator allows you to calculate the required azimuth and distance based on the data from your binoculars. You can send the calculations to the rest of the room users by clicking the <b>Share result</b> button.
+   </p>
+      <img src="  https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Farty2.jpg?v=1561132753160" />
+   <p>
+     You can click on any of the artillery icons on the bottom left panel to spawn an according icon at the center of your screen. <b>If you can't see the icon, don't worry! They only show up at medium and high zoom levels.</b> You can drag the icon around and see its range. You can click at any point withing the artillery's radius to see the range and azimuth for that point. With enough precision, a squad can use a set of howitzers using this map without binoculars. <b>Disclaimer: the development team does not guarantee firing accuracy based on the information from this map. Field artillery also has to take ballistic arc into account.</b>
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fartyil1.jpg?v=1561127148073" />
+
+   
+   <hr /><h4 id="squadstab">
+     4. Squads management
+   </h4>
+  <p>
+    The squad tab allows you to set up squads, roles and configure vehicle crews. 
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fsquad.jpg?v=1561127103444" />
+   <p>
+    You can create new squad by clicking "Create squad". You can change the name of the squad if you are the leader, or leave it. Other people can either join your squad or select their own. <br /> Below the squad panel you can select your role and see how many people with each role are currently online. <br /> On the bottom is the army composition menu that allows you to configure the vehicle setup for an operation and assign crews. Click on any of the categories to select it, and then click on the arrow to add a new vehicle.
+   </p>
+   <hr /><h4 id="refinerytab">
+     5. Refinery tab
+   </h4>
+   <p>
+     Refinery tab allows you to calculate refining times and ratios for resources and set up timers in your refinery of choice.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Frefinery.jpg?v=1561127106635"/>
+   <hr /><h4 id="logicalc">
+     6. Logi calculator
+   </h4>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2FScreenshot_3.png?v=1561132194640"/>
+   <p>
+Selecting different item/s will calculate and display on top the amount of different materials required to produce them.
+   </p>
+    <hr /><h4 id="tech">
+      7. Tech tree
+   </h4>
+  
+   <p>
+     The tech tree tab allows you to record information about the status of the technlogy tree. Select any technology and use the input or the "Fill" button to change the status of a technology. The rectangles on the background display the progress of technologies. The completed ones are marked with green.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Ftech.jpg?v=1561039308548">
+   <hr /><h4 id="statstab">
+    8. Statistics
+   </h4>
+   <p>
+     The statistics tab allows you to see the current state of the war. The <b>Win Condition</b> panel shows you victory town ownership, their levels and how many of them have been upgraded to civic centers. The progress bar in <b>State of the war</b> indicates the ratio of owned town halls and forts.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fstats1.jpg?v=1561127128515" />
+   <hr /><h4 id="usermanagement">
+     9. Settings tab
+   </h4>
+   <p>
+     When you give a user a link to your room, he will be redirected to the "Request Access" page. There he can ask to join your room.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Facc.jpg?v=1561039965618">
+    <img src=" https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fsett.jpg?v=1561039775474">
+  
+   <p>
+     When the request is submitted, a notification will appear on your user management tab and you can choose whether to grant or deny access to the user. If you want, you can click on his name and check his Steam page first. Approving the user will give him a rank of viewer, denying the user will ban him.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fappr.jpg?v=1561040018658">
+   <p>
+     When the user is approved, his name will appear on the users tab. Additionally, you can change the rank of the user whenever you want. The data will be sent to the server and other users in real time.
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fdown.jpg?v=1561040093802">
+   <p>
+     If you choose to make a user an admin, a warning modal will appear and inform you that making a user an admin will transfer the ownership to him. <b>You cannot make an anonymous user the admin.</b>
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2Fown.jpg?v=1561040158360">
+   <p>
+     If you agree, the selected user will be promoted to room admin and you will be demoted to moderator.
+   </p>
+   <h5>
+     9.1 Room settings
+   </h5>
+   <p>
+     In room settings you can change the room name, password and toggle it to secure or unsecure. Setting it to secure <b>will kick all anonymous users</b>. Setting it to unsecure <b>will allow access to anyone with the link and the password.</b><br /> You can also link the <b>Foxhole Global Bot</b> to a discord channel using the instructions on the management page. <b>You can access these features only if you are a Steam-logged user.</b>
+   </p>
+   <img src="https://cdn.glitch.com/dd3f06b2-b7d4-4ccc-8675-05897efc4bb5%2FScreenshot_4.png?v=1561135471597" />
+
+   
+   
+   <!-- <h3></h3><hr> -->
+    <div class="credits">
+   <br /> <h3 id="credits">
+      Credits
+    </h3>
+    <br>
+    <h5>Lead Developer</h5>
+    <h4>Kastow</h4>
+     <br>
+    <h5>Project Manager & Design</h5>
+    <h4>Mulon</h4>
+    
+      <br>
+    <h5>Voiced By</h5>
+    <h4>CaptainInArms (PressCorps)</h4>
+      <br>
+    <h5>Original map & database design</h5>
+    <h4>Sethfire</h4>
+    <br>
+    <h5>Quality Assurance</h5>
+    <h4>Warden Navy</h4>
+    <h4>Mulon</h4>
+    <h4></h4>
+    <h4></h4>
+    <br>
+    <h5>
+      Testing
+    </h5>
+    <h4>
+      Warden Navy, CBC
+    </h4>
+    <br>
+      <br>
+    <h5>
+      Collaborators
+    </h5>
+    <h4>
+      Sethfire
+Mitchel-256
+Carefulrogue
+      Chestmeister13
+    </h4>
+    <br>
+    <h5>
+      Additional resources
+    </h5>
+    <h4>
+      BladeRikWr, Guizmo, Derp
+    </h4>
+      <br>
+    <h5>
+      Special Thanks To
+    </h5>
+    <h4>
+      Krowt9r, BlackHawk, ZERO clan, root, Hayden, Casey, Markfoot
+    </h4>
+    <br>
+    <h5>
+      Based on Foxhole Interactive Map by Sethfire, Kastow, TauZeph, Fiddler and BladeRikWr
+    </h5>
+    <br>
+    <h5>
+      Maps and icons are a property of Clapfoot Inc. and are used with their permission.
+    </h5>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </body>
+  <script src="/webpack/about.js"></script>
+  <script src="https://aratcliffe.github.io/Leaflet.contextmenu/dist/leaflet.contextmenu.js"></script>
+</html>

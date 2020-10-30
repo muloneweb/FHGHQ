@@ -1,0 +1,108 @@
+#myModal{
+  margin-top:200px;
+}
+.modal-content{
+  background-color: transparent;
+  margin-top: 50px;
+  border: 0px;
+}
+
+#AuthBanner{
+  background-image:url();
+  background-position: center center; 
+  }
+
+body{
+background: url(https://cdn.glitch.com/84b19724-a86b-4caa-8e69-1e9c973e043f%2Fdd3f06b2-b7d4-4ccc-8675-05897efc4bb5_dd3f06b2-b7d4-4ccc-8675-05897efc4bb5_BG_1080.jpg?v=1565480198799);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center center; 
+  background-attachment: fixed;
+   background-color: transparent;
+ 
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+  }
+}
+.modal-header{
+  animation: fadeIn 2s;
+  background-color: transparent;
+    background-image: url(https://cdn.glitch.com/84b19724-a86b-4caa-8e69-1e9c973e043f%2Fnbr.png?v=1567258459567);
+  -webkit-filter: drop-shadow(1px 1px 9px black);filter: drop-shadow(1px 1px 9px black);
+  background-repeat: no-repeat;
+    text-align: center;
+   background-size: 100% 100%;
+  border-radius: 0px;
+  border: 0px;
+border-bottom: 0px;
+  height: 160px;
+  
+}
+.modal-title{
+  text-align: center;
+  width:100%;
+  color:transparent;
+}
+
+.btn{
+  color: #d6d6d6;
+	background-color: transparent;
+	border:0px;
+	border-radius: 0px;
+  outline:0 !important;
+  
+}
+
+.name_input{margin-top: 15px;
+  
+}
+#bnr{
+  
+ margin-top: 100px;
+ position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+#wrapper{
+display: flex;
+justify-content: center;
+}
+
+#authBtn
+{   color: #d6d6d6;
+	background-color: #292929;
+	border:1px solid black;
+	border-radius: 0px;
+  outline:0 !important;
+ }
+
+#noauthBtn
+{   color: #d6d6d6;
+	background-color: #292929;
+	border:1px solid black;
+	border-radius: 0px;
+  outline:0 !important;
+ }
+
+.modal-body{
+   animation: fadeIn 2s;
+   background-color: transparent;
+  font-size: 16px;
+  text-shadow:2px 2px black;
+  border: 0px;
+  margin-top: 20px;
+}
+
+#inf{text-align: center;}
+
+.modal {
+  overflow: auto;
+}

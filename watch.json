@@ -1,0 +1,20 @@
+{
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$"
+    ]
+  },
+  "restart": {
+    "exclude": [
+      "^src/",
+      "^dist/"
+    ],
+    "include": [
+      "\\.js$",
+      "\\.jsx$",
+      "\\.json"
+    ]
+  },
+  "throttle": 300000,
+"_comment": "300000 = #d6d6d6(white) #292929(black) #e4713d(orange     tttttttttttttttttttttttttttt" }

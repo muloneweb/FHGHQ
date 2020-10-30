@@ -1,0 +1,233 @@
+.chat_userimg{
+  width:20px;
+  height:20px;
+}
+
+.col.chat_window_container{
+    text-align: left;
+      padding: 0px;
+  height:100%;
+  display: flex;
+  flex-direction:column;
+}
+
+#chat_window_announcements.chat_window{
+  border-left: 3px solid #212529;
+}
+
+#chat_window_general.chat_window{
+  border-right: 3px solid #212529;
+}
+#chat_window_personal{
+  height:200px;
+}
+
+.chat_window{
+  background-color: rgba(0,0,0,0.9);
+overflow: auto;
+scrollbar-color: #0c0c0c #292929;
+flex-grow:1;
+}
+
+.chat_window::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+}
+
+.chat_window::-webkit-scrollbar-track-piece  {
+    background-color: #0c0c0c;
+}
+
+.chat_window::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #292929;
+}
+
+.chat_window_header{
+    text-shadow: 2px 2px 2px black;
+    animation: fadeIn 1s;
+    border-bottom: 4px solid #212529;
+    background-color: #292929;
+  width: 100%;
+  height: 35px;
+    text-align: center;
+  font-size: 16px;
+  padding-top: 5px; 
+}
+
+#chat_window_undefined.chat_window{
+  max-hegiht:360px;
+  font-size: 14px;
+}
+
+
+#generalheader.chat_window_header{
+  color:#b39c78;
+   border-right: 3px solid #212529;
+}
+
+#announcementsheader.chat_window_header{
+    border-left: 3px solid #212529;
+}
+
+#msg{
+  padding-top: 40px;
+  color: #bbbbbb;
+}
+
+#opc{
+    color:#b39c78;
+}
+
+ul {
+  padding-inline-start: 5px;}
+
+.chat_message_li{
+padding-top: 6px;
+  padding-right: 10px;
+  animation: fadeIn 0.5s;
+  color:#a7a7a7;
+}
+
+.chat_message_username{
+  text-shadow: 2px 2px 2px black;
+  padding-left: 8px;
+  font-size: 16px;
+  color: #d6d6d6;
+  
+}
+.chat_message_datespan{
+    font-size: 13px;
+  color: #3c3c3c;  
+}
+.chat_input_container{
+  margin-bottom: 5px;
+    border-top: 4px solid #212529;
+    border-bottom:  4px solid #212529;  
+    height: 28px;
+    outline:0 !important;
+      background-color: #292929;
+  display:flex;
+}
+.chat_input_field{
+  padding-left: 5px;
+  height: 30px;
+    outline:0 !important;
+      background-color: #1f1f1f;
+  -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
+    border-top: 1px inset #242424;
+    border-right: 1px inset #363636;
+    border-bottom: 1px inset #363636;
+    border-left: 1px inset #242424;
+    border-radius: 1px;
+  color: #d6d6d6;
+  width: 10px;
+flex-grow: 1;
+}
+
+.chat_input_btn_img{
+  opacity: 0.5;}
+  
+.chat_input_btn{
+  padding:0px;
+    height: 30px;
+  width: 30px;
+  outline:0 !important;
+  color: #d6d6d6;
+    border: 1px solid black;
+      background-color: #292929;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-style: solid;
+    border-radius: 1px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1px;
+    border-top: 1px outset #363636;
+    border-right: 1px outset #242424;
+    border-bottom: 1px outset #242424;
+    border-left: 1px outset #363636;
+}
+
+.chat_input_btn:hover{
+  background-color: #323232;
+}
+
+.chat_input_btn:active:selected{
+  background-color: black;
+}
+#chat_totalcontainer{
+  height:100%;
+}
+
+
+#chat_window_personal{
+  max-height: 450px;
+}
+
+
+.chat_message_text_general{
+  color:#89bcb5;
+      font-size: 15px;
+}
+
+.chat_message_text_announcements{
+  color:#a9a9a9;
+     font-size: 15px;
+}
+
+#chat_personal_totalcontainer{
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      border-radius: 2px;
+  margin-top: 5px;
+  max-height: 450px;
+  border-left:3px solid #292929;
+   border-right:3px solid #292929;
+   border-bottom:3px solid #292929;
+}
+
+#chat_window_header_personal{
+   border-top:3px solid #212529;
+  text-align: left;
+  display-inline: block;
+  vertical-align: middle;
+}
+
+
+.userlist_chat_notification{
+     height: 10px;
+    padding-right: 5px;
+    width: 19px;
+  display: inline-block;
+}
+
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+

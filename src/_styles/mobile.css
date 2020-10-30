@@ -1,0 +1,117 @@
+@media only screen and (max-width: 750px) {
+  /*////////////////////////MAIN//////////////////////*/
+  .eventLog{
+    height:max-content;
+  }
+  #tabs_op_timer_li{
+    width:100%;
+    text-align:center;
+    margin-top:2px;
+  }
+  #general_container_row{
+    flex-direction:column-reverse;
+  }
+  .nav-link{
+    padding-left:4px;
+    padding-right:4px;
+  }
+  #top_banner_playersonline{
+    justify-content:center;
+  }
+  #profile_dropdown_btn{
+    margin-left:0px;
+    margin-right:0px;
+  }
+  #map-workspace{
+    height:max-content;
+  }
+  #mapcontainer{
+    height:400px;
+  }
+  /*/////////////////////SQUADS//////////////////////////////////////*/
+  .squads_squadcontainer{
+    width:50%;
+  }
+  #squads_roleselect_table{
+    margin-left:0px;
+    margin-top:5px;
+    width:100%;
+  }
+  #squads_rolecounter_table{
+    margin-top:5px;
+  }
+  .squads_armycomp_vehiclebtn{
+    padding:0px;
+  }
+  .squads_armycomp_vehicleimg,.squads_armycomp_vehicleimg:hover{
+    width:100%;
+  }
+  #squad_armycomp_table{
+    width:100%;
+    max-width:100%;
+  }
+  /*//////////////////////REFINERY///////////////////////*/
+  .refinery_topimg,.refinery_arrow,.refinery_bottomimg{
+    width:100%;
+    height:unset;
+  }
+  
+  #ref_col_container{
+    width:100%;
+    max-width:100%;
+  }
+  #ref_col_container2{
+    width:100%;
+    max-width:100%;
+    flex-basis:unset;
+  }
+  /*///////////////////STATS//////////////////////////////*/
+  #stats_cas_col{
+    width:100%;
+    max-width:100%;
+    flex-basis:unset;
+  }
+  /*//////////////////SETTINGS////////////////////////////*/
+  #manage{
+    margin-right:0px;
+  }
+  #settings_usertable{
+    width:100%;
+  }
+  /*/////////////////MODALS///////////////////////////////*/
+  .modal-content.request_modal_content{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 1599px) and (min-width: 1250px){
+  #ref_col_container2{
+    padding-right:0px;
+  }
+  .ref_total_myinput{
+    width:60px;
+  }
+  #ref_col_container,#ref_order_table{
+    max-width:500px;
+  }
+  #op_timer_container{
+    margin-left:5px;
+  }
+  #top_banner_resources{
+    margin-left:5px;
+  }
+  #top_banner_playersonline{
+    margin-right:5px;
+  }
+  .nav-item{
+    width:45px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1600px) {
+  
+}
+
