@@ -1,7 +1,7 @@
  Foxhole Global V2.1
 =================
 Community made project involving shared map, API, voice acted events and statistics.
-https://preview.redd.it/cx4uwaz2np531.jpg?width=1429&format=pjpg&auto=webp&s=a60070abf9caaef872ada1556e203590e1599b9a
+https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_3.jpg
 _________
 Shortcuts:
 
