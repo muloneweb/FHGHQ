@@ -6,7 +6,7 @@ Interactive Map with azimuth and distance calculator
 ![Interactive Map with azimuth and distance calculator](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_3%20-%20Copy.webp)
 
 Custom placeable orders
-![Logistics](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_3%20-%20Copy.webp](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_5.jpg)
+![Logistics](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_5.jpg)
 
 Refinery orders
 ![Logistics](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_4.jpg)
