@@ -1,7 +1,8 @@
  Foxhole Global V2.1
 =================
 Community made project involving shared map, API, voice acted events and statistics.
-https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_3%20-%20Copy.webp
+![Interactive Map with azimuth and distance calculator](https://github.com/muloneweb/FHGHQ/blob/master/Screenshot_3%20-%20Copy.webp)
+
 _________
 Shortcuts:
 
