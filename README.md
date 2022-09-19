@@ -1,6 +1,7 @@
  Foxhole Global V2.1
 =================
-The project is currently in a complete disarray, unmaintained and deprecated. Some people still use it.
+Community made project involving shared map, API, voice acted events and statistics.
+https://preview.redd.it/cx4uwaz2np531.jpg?width=1429&format=pjpg&auto=webp&s=a60070abf9caaef872ada1556e203590e1599b9a
 _________
 Shortcuts:
 
